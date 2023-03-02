@@ -4,5 +4,5 @@
 }
 
 .wrapper div:nth-child(even) {
-    background: skyblue;
+    background: salmon;
 }
