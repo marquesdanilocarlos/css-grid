@@ -1,8 +1,8 @@
-.wrapper div {
+.wrapper * {
     background: royalblue;
     padding: 1rem;
 }
 
-.wrapper div:nth-child(even) {
+.wrapper *:nth-child(even) {
     background: salmon;
 }
