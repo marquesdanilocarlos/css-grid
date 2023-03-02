@@ -1,0 +1,66 @@
+.article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+    grid-auto-rows: 150px;
+    grid-template-areas:
+            "title"
+            "meta"
+            "copy1"
+            "copy2"
+            "media"
+            "aside";
+}
+
+.title {
+    background: darkslateblue;
+    grid-area: title;
+}
+
+.meta {
+    background: hotpink;
+    grid-area: meta;
+}
+
+.copy1 {
+    background: darkcyan;
+    grid-area: copy1;
+}
+
+.copy2 {
+    background: seagreen;
+    grid-area: copy2;
+}
+
+.media {
+    background: darksalmon;
+    grid-area: media;
+}
+
+.aside {
+    background: darkgoldenrod;
+    grid-area: aside;
+}
+
+@media (min-width: 768px) {
+    .article {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "meta title title"
+            "copy1 copy1 copy1"
+            "copy2 copy2 copy2"
+            "media media aside";
+    }
+}
+
+@media (min-width: 1200px) {
+    .article {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "meta title title title copy2 copy2"
+            "copy1 copy1 copy1 copy1 copy2 copy2"
+            "media media media media media media"
+            "aside aside . . . .";
+    }
+}
+
