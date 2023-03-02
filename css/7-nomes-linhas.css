@@ -1,0 +1,19 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: [site-start] 1fr [content-start] repeat(4, 1fr) [site-end];
+    grid-template-rows: [site-top] 200px [content] 200px [site-bottom] 200px;
+    grid-gap: 0.5rem;
+}
+
+header, footer {
+    grid-column: site;
+}
+
+main {
+    grid-column: content/site-end;
+}
+
+aside {
+    grid-column: site-start/content-start;
+    grid-row-start: content;
+}
