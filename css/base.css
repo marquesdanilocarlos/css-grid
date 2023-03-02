@@ -1,0 +1,8 @@
+.wrapper div {
+    background: royalblue;
+    padding: 1rem;
+}
+
+.wrapper div:nth-child(even) {
+    background: skyblue;
+}
